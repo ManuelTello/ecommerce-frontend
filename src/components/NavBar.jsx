@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import {Nav} from "react-bootstrap";
 import {buttonActive} from "../lib/button.js";
 
-const {Item,Link} = Nav;
+const {Item} = Nav;
 
 const NavBar = ()=>{
     return <Nav as={"ul"}>
