@@ -1,9 +1,19 @@
 import React from "react";
-//import useFetch from "../hooks/useFetch.js";
+import {Link} from "react-router-dom";
+import useFetch from "../hooks/useFetch.js";
+//import lista from "../assets/categorys.json";
 
-const Category = ()=>{
-    //const data = useFetch("https://ecommerce-backend-folio.herokuapp.com/category/all");
-    return <h1>Category page</h1>
+const Categorys = ()=>{
+    const lista = useFetch("https://ecommerce-backend-folio.herokuapp.com/category/all");
+    return <div>
+        {lista && lista.map((cat)=>{
+            const {name,subcat} = cat;
+            return <div key={name}> 
+                <h1><Link to={`/categorys/${name}`}>{name}</Link></h1>
+                <ul>{subcat.map(e =><li key={e}><Link to={`/categorys/${name}/${e}`}>{e}</Link></li>)}</ul>
+            </div>
+        })}
+    </div>
 };
 
-export default Category;
+export default Categorys;

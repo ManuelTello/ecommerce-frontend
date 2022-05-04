@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Tecnologia",
+    "subcat": [
+      "Telefonia",
+      "Computacion",
+      "Camaras",
+      "Audio & Video",
+      "Consolas"
+    ]
+  },
+  {
+    "name": "Herramientas",
+    "subcat": [
+      "Electricas",
+      "Manuales",
+      "Industriales",
+      "Jardineria",
+      "Cajas y organizadores"
+    ]
+  },
+  {
+    "name": "Inmuebles",
+    "subcat": [
+      "Consultorios",
+      "Hogareños",
+      "Locales",
+      "Fondos de comercio",
+      "Quinta",
+      "Tiempo compartido"
+    ]
+  },
+  {
+    "name": "Construccion",
+    "subcat": [
+      "Abertura",
+      "Electricidad",
+      "Baños y sanitorios",
+      "Pintureria",
+      "Plomeria",
+      "Material de obra"
+    ]
+  },
+  {
+    "name": "Moda",
+    "subcat": [
+      "Camisas",
+      "Remeras",
+      "Pantalones",
+      "Enteritos",
+      "Calzados"
+    ]
+  },
+  {
+    "name": "Deportes",
+    "subcat": [
+      "Basquet",
+      "Artes marciales y boxeo",
+      "Buceo",
+      "Tenis",
+      "Handball",
+      "Paintball"
+    ]
+  },
+  {
+    "name": "Supermercado",
+    "subcat": [
+      "Bebidas sin alcohol",
+      "Pre echos",
+      "Tentempies",
+      "Bebidas alcoholicas"
+    ]
+  }
+]
