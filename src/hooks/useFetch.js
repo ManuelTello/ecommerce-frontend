@@ -11,7 +11,6 @@ const useFetch = (uri)=>{
 			try{
 				const req = await fetch(uri);
 				const res = await req.json();
-				console.log(res);
 				setData(res);
 			}catch(err){
 				console.log(err);

@@ -6,7 +6,7 @@ import useFetch from "../hooks/useFetch.js";
 const Categorys = ()=>{
     const lista = useFetch("https://honeysuckle-giant-ambert.glitch.me/category/all");
     return <div>
-        {lista && lista.map((cat)=>{
+        {lista && lista.data.map((cat)=>{
             const {name,subcat} = cat;
             return <div key={name}> 
                 <h1><Link to={`/categorys/${name}`}>{name}</Link></h1>
