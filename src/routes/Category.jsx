@@ -4,7 +4,7 @@ import useFetch from "../hooks/useFetch.js";
 //import lista from "../assets/categorys.json";
 
 const Categorys = ()=>{
-    const lista = useFetch("https://ecommerce-backend-folio.herokuapp.com/category/all");
+    const lista = useFetch("https://honeysuckle-giant-ambert.glitch.me/category/all");
     return <div>
         {lista && lista.map((cat)=>{
             const {name,subcat} = cat;
