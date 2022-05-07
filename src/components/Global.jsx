@@ -5,7 +5,9 @@ import NavBar from "./NavBar.jsx";
 const Global = ()=>{
     return <React.Fragment>
         <NavBar/>
-        <Outlet/>
+        <div className="container-fluid">
+            <Outlet/>
+        </div>
     </React.Fragment>
 };
 
