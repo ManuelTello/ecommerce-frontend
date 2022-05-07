@@ -19,7 +19,7 @@ const useFetch = (uri)=>{
 		fetchdData();
 	},[uri]);
 
-	return data;
+	return data.data;
 };
 
 export default useFetch;
