@@ -1,9 +1,5 @@
 import React from "react";
-import {NavLink, Link} from "react-router-dom";
-import {Nav} from "react-bootstrap";
-import {buttonActive} from "../lib/button.js";
-
-const {Item} = Nav;
+import {NavLink} from "react-router-dom";
 
 const NavBar = ()=>{
     return <nav className="navbar navbar-expand-sm navbar-dark bg-primary">
