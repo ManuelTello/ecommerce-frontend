@@ -2,7 +2,7 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 
 const NavBar = ()=>{
-    return <nav className="navbar navbar-expand-sm navbar-dark bg-primary">
+    return <nav className="navbar navbar-expand navbar-dark bg-primary">
         <div className="container">
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
