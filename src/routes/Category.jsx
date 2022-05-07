@@ -15,7 +15,7 @@ const Categorys = ()=>{
                             <Link key={name} to={`/categorys/${name}`} style={{textDecoration:"none"}}>{name}</Link>
                         </h4>
                     </div>
-                    {subcat.map(e =><div className={"col-12 col-sm-4 col-md-3 text-center text-sm-start"}>
+                    {subcat.map(e =><div className={"col-12 col-sm-4 col-md-3 col-xl-2 text-center text-sm-start"}>
                         <Link key={e} to={`/categorys/${name}/${e}`} style={{textDecoration:"none"}}>
                             <h7 className="text-secondary">{e}</h7>
                         </Link>
