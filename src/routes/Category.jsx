@@ -4,9 +4,8 @@ import useFetch from "../hooks/useFetch.js";
 
 const Categorys = ()=>{
     const lista = useFetch("https://honeysuckle-giant-ambert.glitch.me/category/all");
-
-    return <div className="container py-1 my-5 bg-secondary bg-opacity-25 rounded">
-        {lista && lista.map((cat)=>{
+    const lista_categoria = lista && <div className="container py-1 my-5 bg-secondary bg-opacity-25 rounded">
+        {lista.map((cat)=>{
             const {name,subcat} = cat;
             return <div key={name} className="m-4"> 
                 <div className="row">
@@ -24,6 +23,14 @@ const Categorys = ()=>{
             </div>
         })}
     </div>
+
+    return <React.Fragment>
+        {lista ? lista_categoria : <div class="d-flex justify-content-center align-items-center" style={{height:"90vh"}}>
+            <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>}
+    </React.Fragment>
 };
 
 export default Categorys;
