@@ -6,7 +6,7 @@ const Categorys = ()=>{
     const lista = useFetch("https://honeysuckle-giant-ambert.glitch.me/category/all");
 
     return <>
-        {lista ? <CategoryMain lista={lista}/>: <CategoryLoad/>}
+        {lista ? <CategoryMain lista={lista}/> : <CategoryLoad/>}
     </>
 };
 
